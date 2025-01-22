@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "Jyothi_backend": {
+      "main": "src/Jyothi_backend/main.mo",
+      "type": "motoko"
+    },
+    "Jyothi_frontend": {
+      "dependencies": [
+        "Jyothi_backend"
+      ],
+      "source": [
+        "src/Jyothi_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "Jyothi_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
