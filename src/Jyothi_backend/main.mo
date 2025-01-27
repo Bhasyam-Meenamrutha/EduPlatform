@@ -79,10 +79,9 @@ public type UserRole = {
 
    public type StdRegistration = {
     name:Text;
-    rollno:Nat64;
+    rollno:Text;
     email:Text;
     dob:Text;
-    qualification:Text;
     collegeName:Text;
     address:Text;
     prin:Principal;

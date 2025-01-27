@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { FaUser, FaEnvelope, FaLock, FaBuilding } from 'react-icons/fa';
-import { auth } from '/home/meenamrutha/MCA/Jyothi/src/Jyothi_frontend/src/components/utils/auth.js';
+import { auth } from '/home/srujan/MCA/EduPlatform/src/Jyothi_frontend/src/components/utils/auth.js';
 import { toast } from 'react-toastify';
 
 const RegisterContainer = styled.div`
@@ -117,7 +117,7 @@ const Button = styled(motion.button)`
   }
 `;
 
-const Register = () => {
+const Organiza_Register = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -157,10 +157,10 @@ const Register = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          Create Account
+          Organization Registration
         </motion.h2>
 
-        <FormGroup>
+        {/* <FormGroup>
           <IconWrapper>
             {formData.userType === 'student' ? <FaUser /> : <FaBuilding />}
           </IconWrapper>
@@ -172,9 +172,9 @@ const Register = () => {
             <option value="student">Student</option>
             <option value="organization">Organization</option>
           </Select>
-        </FormGroup>
+        </FormGroup> */}
 
-        {formData.userType === 'student' ? (
+        {/* {formData.userType === 'student' ? (
           <FormGroup>
             <IconWrapper>
               <FaUser />
@@ -187,7 +187,7 @@ const Register = () => {
               onChange={handleChange}
             />
           </FormGroup>
-        ) : (
+        ) : ( */}
           <FormGroup>
             <IconWrapper>
               <FaBuilding />
@@ -200,7 +200,7 @@ const Register = () => {
               onChange={handleChange}
             />
           </FormGroup>
-        )}
+        {/* )} */}
 
         <FormGroup>
           <IconWrapper>
@@ -216,6 +216,48 @@ const Register = () => {
         </FormGroup>
 
         <FormGroup>
+            <IconWrapper>
+              <FaBuilding />
+            </IconWrapper>
+            <Input
+              type="text"
+              name="OrganizationLocation"
+              placeholder="Organization Location"
+              value={formData.organizationLoc}
+              onChange={handleChange}
+              required 
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <IconWrapper>
+              <FaBuilding />
+            </IconWrapper>
+            <Input
+              type="number"
+              name="phno"
+              placeholder="Phone Number"
+              value={formData.phno}
+              onChange={handleChange}
+              required 
+            />
+          </FormGroup>
+
+          <FormGroup>
+            <IconWrapper>
+              <FaBuilding />
+            </IconWrapper>
+            <Input
+              type="text"
+              name="about"
+              placeholder="About Organization"
+              value={formData.about}
+              onChange={handleChange}
+              required 
+            />
+          </FormGroup>
+
+        {/* <FormGroup>
           <IconWrapper>
             <FaLock />
           </IconWrapper>
@@ -226,7 +268,7 @@ const Register = () => {
             value={formData.password}
             onChange={handleChange}
           />
-        </FormGroup>
+        </FormGroup> */}
 
         <Button
           whileHover={{ scale: 1.02 }}
@@ -240,4 +282,4 @@ const Register = () => {
   );
 };
 
-export default Register;
+export default Organiza_Register;

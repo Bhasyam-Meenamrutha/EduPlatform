@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { FaUser, FaLock, FaUserGraduate, FaBuilding } from 'react-icons/fa';
-import { auth } from '/home/meenamrutha/MCA/Jyothi/src/Jyothi_frontend/src/components/utils/auth.js';
+import { auth } from '/home/srujan/MCA/EduPlatform/src/Jyothi_frontend/src/components/utils/auth.js';
 import { toast } from 'react-toastify';
 
 const LoginContainer = styled.div`

@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Login from './components/auth/Login';
-import Register from './components/auth/Register';
+import Register from './components/auth/Student_Register';
 import StudentDashboard from './components/dashboard/StudentDashboard';
 import OrganizationDashboard from './components/dashboard/OrganizationDashboard';
 import Home from './components/Home';
@@ -10,6 +10,8 @@ import Footer from './components/common/Footer';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { createGlobalStyle } from 'styled-components';
+import Organiza_Register from './components/auth/Organiza_Register';
+import Connect from './components/common/Connect';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -54,6 +56,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/student-dashboard" element={<StudentDashboard />} />
           <Route path="/org-dashboard" element={<OrganizationDashboard />} />
+          <Route path='/Organiza_Register' element={<Organiza_Register />} />
+          <Route path='Connect' element={<Connect />} />
         </Routes>
       </main>
       <Footer />

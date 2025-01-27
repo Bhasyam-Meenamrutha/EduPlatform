@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import styled from 'styled-components';
 import { FaBuilding, FaSearch, FaCertificate, FaUserGraduate, FaEye } from 'react-icons/fa';
-import { auth } from '/home/meenamrutha/MCA/Jyothi/src/Jyothi_frontend/src/components/utils/auth.js';
-import { storage } from '/home/meenamrutha/MCA/Jyothi/src/Jyothi_frontend/src/components/utils/storage.js';
+import { auth } from '/home/srujan/MCA/EduPlatform/src/Jyothi_frontend/src/components/utils/auth.js';
+import { storage } from '/home/srujan/MCA/EduPlatform/src/Jyothi_frontend/src/components/utils/storage.js';
 
 const DashboardContainer = styled.div`
   min-height: 100vh;
